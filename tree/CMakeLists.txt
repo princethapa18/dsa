@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-set(proj_name "TreeTraversalIterative")
+set(proj_name "Tree")
 
 # set the project name and version
 project(${proj_name} VERSION 1.0)
@@ -9,7 +9,7 @@ project(${proj_name} VERSION 1.0)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-file(GLOB_RECURSE sources ${CMAKE_CURRENT_SOURCE_DIR}/utilities/*.cpp ${CMAKE_CURRENT_SOURCE_DIR}/iterative-tree-traversals.cpp)
+file(GLOB_RECURSE sources ${CMAKE_CURRENT_SOURCE_DIR}/utilities/*.cpp ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp)
 file(GLOB_RECURSE headers ${CMAKE_CURRENT_SOURCE_DIR}/utilities/*.h)
 
 # add the executable

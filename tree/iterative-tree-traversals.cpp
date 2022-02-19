@@ -3,13 +3,10 @@
 
 */
 #include <iostream>
-#include <string>
-#include <sstream>
 #include <stack>
 #include <vector>
 #include "utilities/tree.h"
 #include "utilities/debugger.cpp"
-#include <memory>
 using namespace std;
 
 /*
@@ -50,31 +47,20 @@ void iterativeInorderTraversal(Node *root)
 
   while(!st.empty() || curr!= nullptr)
   {
-    while(curr != nullptr)
+    if(curr)
     {
       st.push(curr);
       curr = curr->left;
     }
-    curr = st.top();
-    st.pop();
-    cout << curr->data << " ";
-    curr = curr->right;
+    else
+    {
+        curr = st.top();
+        st.pop();
+        cout << curr->data << " ";
+        curr = curr->right;
+    }
   }
 }
 
-int main()
-{ 
-    string inputstr;
-    cout << "Enter numbers to build a tree: ";
-    getline(cin, inputstr);
-    std::unique_ptr<Tree> treePtr{new Tree};
-    //auto p = make_unique<int[]>(5);
-    //auto rp = std::unique_ptr<Resource, customDeleter>(new Resource, customDeleter());
-    Tree *tree = treePtr.get();
-    tree->buildTree(inputstr);
-    tree->printTree();
-    iterativeInorderTraversal(tree->m_root);
-    return 0;
-}
 
 
