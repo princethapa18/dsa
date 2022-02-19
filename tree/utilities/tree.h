@@ -1,22 +1,14 @@
 #pragma once
 #include <string>
-using namespace std;
+#include "node.h"
 
-struct Node
+class Tree
 {
-    int data;
-    Node* left;
-    Node* right;
-    Node(int val) : data{val}, left{nullptr}, right{nullptr}  { }
-    ~Node(){}
-};
-
-struct Tree
-{
+public:
     Node *m_root{nullptr};
     ~Tree();
     Node* deleteRecursivePostOrder(Node *root);
-    Node* buildTree(string str);
+    Node* buildTree(std::string str);
     void  printTree(Node* root);
     void  printTree();
 };

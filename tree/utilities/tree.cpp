@@ -3,7 +3,7 @@
 #include <queue>
 #include <vector>
 #include "tree.h"
-#include "debugger.cpp"
+#include "debugger.h"
 
 using namespace std;
 
