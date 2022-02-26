@@ -6,7 +6,7 @@
 #include <stack>
 #include <vector>
 #include "utilities/tree.h"
-#include "utilities/debugger.cpp"
+#include "utilities/debugger.h"
 using namespace std;
 
 /*
