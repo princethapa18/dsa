@@ -9,8 +9,8 @@ project(${proj_name} VERSION 1.0)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-file(GLOB_RECURSE sources ${CMAKE_CURRENT_SOURCE_DIR}/utilities/*.cpp ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp)
-file(GLOB_RECURSE headers ${CMAKE_CURRENT_SOURCE_DIR}/utilities/*.h)
+file(GLOB_RECURSE sources ${CMAKE_CURRENT_SOURCE_DIR}/utilities/*.cpp ${CMAKE_CURRENT_SOURCE_DIR}/it*.cpp ${CMAKE_CURRENT_SOURCE_DIR}/lowest*.cpp ${CMAKE_CURRENT_SOURCE_DIR}/kth*.cpp ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp)
+file(GLOB_RECURSE headers ${CMAKE_CURRENT_SOURCE_DIR}/*.h ${CMAKE_CURRENT_SOURCE_DIR}/utilities/*.h)
 
 # add the executable
 add_executable(${proj_name} ${sources} ${headers})

@@ -1,4 +1,6 @@
-#pragma once
+#ifndef BST_H
+#define BST_H
+
 #include <vector>
 #include "node.h"
 
@@ -18,3 +20,5 @@ public:
     void printBST() { printBST(root); }
     void printBST(Node* root);
 };
+
+#endif

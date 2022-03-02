@@ -5,8 +5,9 @@
 #include <iostream>
 #include <stack>
 #include <vector>
-#include "utilities/tree.h"
-#include "utilities/debugger.h"
+
+#include "common.h"
+
 using namespace std;
 
 /*
@@ -37,6 +38,9 @@ using namespace std;
       12    22  28  
 
 */
+#include "utilities/tree.h"
+#include "utilities/debugger.h"
+
 void iterativeInorderTraversal(Node *root)
 {
   Debugger dbg{__FUNCTION__};

@@ -1,16 +1,15 @@
 /* 19 Feb 2022
    Find kth maximum value in a binary search tree
-
 */
 #include <iostream>
 #include <stack>
 #include <vector>
 #include "utilities/bst.h"
 #include "utilities/debugger.h"
+
 using namespace std;
 
-
-int findKthMax(Node* rootNode, int k) 
+int findKthMax(Node* rootNode, int k)
 {
     if(!rootNode) return 0;
     int count = 0;

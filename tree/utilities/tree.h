@@ -1,4 +1,6 @@
-#pragma once
+#ifndef TREE_H
+#define TREE_H
+
 #include <string>
 #include "node.h"
 
@@ -12,3 +14,5 @@ public:
     void  printTree(Node* root);
     void  printTree();
 };
+
+#endif
