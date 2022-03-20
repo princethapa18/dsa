@@ -1,5 +1,6 @@
 /* 20 Mar 2022
    https://leetcode.com/problems/kth-largest-element-in-an-array/
+   Medium
 
 */
 
